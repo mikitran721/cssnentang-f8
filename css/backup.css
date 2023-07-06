@@ -1,5 +1,91 @@
 
 
+/* position: Absolute -> phu thuoc vao dad item gan nhat co position & lay no lam goc toa do;  */
+
+.box{
+  width:100%;
+  height: 120px;
+  background:#333;
+  position:relative;
+}
+
+.box-child{
+  width:50px;
+  height:50px;
+  background-color: darkgrey;
+  position:absolute;
+  bottom:10px; right:10px;
+}
+
+.box2{
+  position:absolute;
+  width:400px;
+  height: 100px;
+  background-color:aquamarine;
+  bottom:0; right:5px;
+}
+
+/* ung dung de lam lop mo - co alpha de phu toan bo dad item */
+/* .box-child{
+  background-color:rgba(255,100,3,0.3);
+  position:absolute;
+  top:10px; right:10px; bottom:10px; left:10px;
+} */
+
+
+/* Position: hien thi theo vi tri khac biet, gom - Absolute | relative | fixed | Sticky it browser ho tro
+    
+    Relative: vi tri tuong doi, khong bi phu thuoc vao thanh phan nao khac; lay vi tri no dang dung lam goc toa do; khong lam anh huong toi items khac; top, left,..: chi hoat dong khi co position:relatieve;
+    */
+
+    h1 {
+      position: relative;
+      /* top:100px; 
+      left:50px; */
+      right: 20px;
+      bottom:10px;
+    }
+
+
+/* pseudo-elements: tao items hien thi tren website ma ko can tao html
+    gom - ::before | ::after | ::first-letter || ::first-line | ::selection
+    */
+    .box{
+      width: calc(80% + 20px);
+      height: 120px;
+      background: rgb(4,255,4);
+    }
+    /*  tao 1box nho trong .box */
+    .box::before{
+      content:"before box"; /*co content item nay moi hoat dong*/
+      display:block;
+      width:50px;
+      height:50px;
+      background-color:#fff;
+    }
+    .box::after{
+      content:"after box"; /*co content item nay moi hoat dong*/
+      display:block;
+      color:darkblue;
+      width:50px;
+      height:50px;
+      background-color:#fff;
+    }
+
+    h1::first-letter{
+      font-size:50px;
+      color:deeppink;
+    }
+
+    h1::first-line{
+      font-size:35px;
+    }
+    
+    h1::selection{
+      background-color:darkorange;
+      color:silver;
+    }
+
 /* pseudo classes (lop gia) - :root | :hover | : active | :first-child | :last-child
     :root phan tu goc
     :hover: ho chuot

@@ -13,41 +13,25 @@
       padding: 0;
     }
 
-    /* pseudo classes (lop gia) - :root | :hover | : active | :first-child | :last-child
-    :root phan tu goc
-    :hover: ho chuot
-    :active dang hoat dong khi bam va giu chuot
-    */
-    .box{
-      width: calc(80% + 20px);
-      height: 120px;
-      background: rgb(4,255,4);
-    }
-
-    .box:active{
-      background-color: brown;
-    }
-
-    h1:hover{
-      color: blue;
-    }
-
-    li:first-child, li:last-child{
-      color:blueviolet
-    }
-
     
   </style>
   <body>
-    <div class="box"></div>
+    <div class="box">
+      Dad item
+      <div>
+        <div class="box2">
+          <div class="box-child"></div>
 
-    <h1>CSS Pseudo-classes</h1>
+        </div>
+      </div>
+    </div>
+
+    <h1>Position</h1>
     <ol>
-      <li>:root</li>
-      <li>:hover</li>
-      <li>:active</li>
-      <li>:first-child</li>
-      <li>:last-child</li>
+      <li>Relative</li>
+      <li>Absolute</li>
+      <li>Fixed</li>
+      <li>Sticky</li>
     </ol>
   </body>
 </html>
