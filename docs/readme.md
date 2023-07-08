@@ -1,3 +1,12 @@
+# tricks:
+
+/_ css cho 2 items canh nhau _/
+.btn + .btn {
+margin-left: 16px;
+}
+
+- BEM: Block; modify; element;
+
 # CSS Flexbox:
 
 - display: flex | inline-flex
@@ -6,7 +15,7 @@
 - flex-basis: <length>
 - justify-content (main axist/x): flex-start | flex-end | center | space-between | space-around | space-evenly; (evenly - khoang cach space deu nhau; around kc ke noi nhau nen ben trai+fai se =1/2 o item ben trong)
 - justify-self: flex-start | flex-end | center
-- align-content (cross axist/y): flex-start | flex-end | center
+- align-content (cross axist/y): flex-start | flex-end | center (ap dung item)
 - align-self: flex-start | flex-end | center
 - align-items: start | end;
 - flex-grow: <number> 'ti le gian'
