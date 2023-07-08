@@ -6,6 +6,8 @@ margin-left: 16px;
 }
 
 - BEM: Block; modify; element;
+- kiem tra phan tu duoc nhan: e.target.closest('.toast\_\_close')
+- xoa phan tu: main.removeChild(toast);
 
 # CSS Flexbox:
 
