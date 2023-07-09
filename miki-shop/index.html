@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -17,19 +18,50 @@
         <!-- header -->
         <header class="header">
             <div class="grid">
+                
                 <!-- navbar -->
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item--saparate">Vao cua hang tren ung dung</li>
-                        <li class="header__navbar-item">Ket noi</li>
+
+                        <!-- header QR code -->
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--saparate">
+                            Vao cua hang tren ung dung
+                            <div class="header__qr">
+                                <img src="./assets/img/qrCode.png" alt="qr-code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="#" class="header__qr-link">
+
+                                        <img src="./assets/img/googlePlay.png" alt="Google play" class="header__qr-download-img">
+                                    </a>
+                                    <a href="#" class="header__qr-link">
+
+                                        <img src="./assets/img/appStore.png" alt="appStore" class="header__qr-download-img">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title-no-pointer">Ket noi</span>
+                            <a href="#" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
                     </ul>
     
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-item-link">Thong bao</a>
+                            <a href="#" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-bell"></i>
+                                Thong bao</a>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-item-link">Tro giup</a>
+                            <a href="#" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-circle-question"></i>
+                                Tro giup</a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--strong header__navbar-item--saparate">
                             Dang ky
