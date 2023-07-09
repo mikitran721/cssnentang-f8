@@ -1,0 +1,34 @@
+/* khai bao bien */
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+}
+
+* {
+    box-sizing: inherit; /* ke thua tu the chua no - html*/
+}
+
+html{
+    font-size: 62.5%; /* 10px */
+    line-height:1.6rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    box-sizing: border-box;
+
+}
+
+/* nen mong responsive */
+.grid{
+    width: 1200px;
+    max-width: 100%; /* co tac dung 100% voi man hinh nho hon*/
+    margin: 0 auto; /* can giua khoi con*/
+}
+
+.grid__full-width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+}
