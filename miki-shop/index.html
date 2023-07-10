@@ -53,10 +53,61 @@
                     </ul>
     
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
                             <a href="#" class="header__navbar-item-link">
                                 <i class="header__navbar-icon fa-regular fa-bell"></i>
-                                Thong bao</a>
+                                Thong bao
+                            </a>
+                            
+                            <!-- Notification -->
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thong bao moi nhan</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a class="header__notify-link" href="">
+                                            <img src="https://images.unsplash.com/photo-1675924212792-70a569d1cad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">My pham E100 chinh hang</span>
+                                                <span class="header__notify-description">Mo ta my phan E100 - Cream VitaminE</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a class="header__notify-link" href="">
+                                            <img src="https://images.unsplash.com/photo-1688315028845-b8a05c024253?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">My pham E100 chinh hang</span>
+                                                <span class="header__notify-description">Mo ta my phan E100 - Cream VitaminE</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a class="header__notify-link" href="">
+                                            <img src="https://images.unsplash.com/photo-1688315031371-e216dad33add?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=1000&q=60" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">My pham E100 chinh hang</span>
+                                                <span class="header__notify-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius reprehenderit qui dolores alias delectus harum iste sit, dolore quo excepturi, quaerat earum aperiam beatae dolorum optio consequuntur soluta modi reiciendis?</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a class="header__notify-link" href="">
+                                            <img src="https://images.unsplash.com/photo-1688247534059-f11d7f3068f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=1000&q=60" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">My pham E100 chinh hang, My pham E100 chinh hang</span>
+                                                <span class="header__notify-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, error. Perspiciatis dignissimos quod quisquam quia iste voluptate fugiat non voluptatem aut provident dolor quibusdam distinctio, corporis ut ullam nemo impedit!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="#" class="header__notify-footer-btn">
+                                        Xem tat ca
+                                    </a>
+                                </footer>
+                            </div>
                         </li>
                         <li class="header__navbar-item">
                             <a href="#" class="header__navbar-item-link">
@@ -80,6 +131,65 @@
 
         <!-- footer -->
         <footer class="footer"></footer>
+    </div>
+
+   <!-- modal layout -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        
+        <div class="modal__body">
+            <div class="modal__inner">
+                <!-- Authen form -->
+                <div class="auth-form">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Dang ky</h3>
+                        <span class="auth-form__switch-btn">
+                            Dang nhap
+                        </span>
+                    </div>
+
+                    <!-- form__form -->
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email cua ban">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mat khau cua ban">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhap lai mat khau">
+                        </div>
+                    </div>
+
+                    <!-- auth-form__aside -->
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">Bang viec dang ki, ban da dong y voi MikiShop ve 
+                            <a href="#" class="auth-form__policy-link">Dieu khoan dich vu</a> &
+                            <a href="#" class="auth-form__policy-link">Chinh sach bao mat</a>
+                        </p>
+                    </div>
+
+                    <!-- auth-form__controls -->
+                    <div class="auth-form__controls">
+                        <button class="btn">TRO LAI</button>
+                        <button class="btn btn--primary">DANG KY</button>
+                    </div>
+
+                    <!-- auth-form_socials -->
+                    <div class="auth-form__socials">
+                        <a href="#" class="btn btn--with-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                            Ket noi voi facebook
+                        </a>
+                        <a href="#" class="btn btn--with-icon">
+                            <i class="fa-brands fa-google"></i>
+                            Ket noi voi Google
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -1,3 +1,9 @@
+# modal layout
+
+- la trang khi hien ra se phu toan bo trang ben duoi = 1 lop hinh nen trong suot mau den nhat;
+- ap dung trong giao dien dang nhap, dang ky
+- ku nao co prop: z-index lon hon se hien thi ra truoc;
+
 # tricks:
 
 /_ css cho 2 items canh nhau _/
@@ -8,6 +14,13 @@ margin-left: 16px;
 - BEM: Block; modify; element;
 - kiem tra phan tu duoc nhan: e.target.closest('.toast\_\_close')
 - xoa phan tu: main.removeChild(toast);
+- Prefix: -webkit- danh cho Chrome, Edge, coc; -moz- firefox; -ms- IE;
+
+- tao hinh vuong: tao 1 the, cho border vien bubu len se tao thanh hinh vuong dac; w=h=0;
+- Trinh duyet toi uu chuyen dong, dang ky vao item co su kien nay,
+  ++ vd: will-change: opacity, transform;
+
+- when to use prefix css
 
 # CSS Flexbox:
 
