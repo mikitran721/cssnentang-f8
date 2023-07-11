@@ -21,6 +21,8 @@ margin-left: 16px;
   ++ vd: will-change: opacity, transform;
 
 - when to use prefix css
+- filter: brightness(80%); -> giam do sang item
+- overflow:hidden; //khi size of boy vuot qua dad thi an di -> cho cho container
 
 # CSS Flexbox:
 
@@ -48,7 +50,7 @@ margin-left: 16px;
   --> khi co position thi cac attr: top,left, bottom, right moi active;
   --> de full thi co the set: top = left = bottom = right = 0;
 
-#background:
+# background:
 
 - dung ket hop image, linear-gradient lam mau nen; sd mau rgba() thi co do trong suot;
 - dung color thi co background-clip: de xac dinh do lan mau; dung image thi dung background_origin de xac dinh;

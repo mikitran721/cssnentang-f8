@@ -128,16 +128,6 @@
     height: 15px;
 }
 
-/* animation for QR; using keyframe with transition - hung - t.gian-s */
-@keyframes fadeIn{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
-}
-
 /* header notification */
 .header__notify{
     position:absolute;
@@ -271,4 +261,142 @@
     font-size:1.4rem;
     font-weight:400;
     text-align:center;
+}
+
+/* auth modal */
+.auth-form{
+    width:500px;
+    background-color:var(--white-color);
+    border-radius:5px;
+    overflow: hidden;
+}
+
+.auth-form__container{
+    padding: 0 32px;
+}
+
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    /* can giua 2 phan tu */
+    justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 10px;
+}
+
+.auth-form__heading{
+    font-size:2.2rem;
+    font-weight:400;
+    color: var(--text-color);
+}
+
+.auth-form__switch-btn{
+    font-size: 1.6rem;
+    color:var(--primary-color);
+    font-weight:500;
+    cursor:pointer;
+}
+
+.auth-form__form{
+    
+}
+
+.auth-form__group{
+
+}
+.auth-form__input{
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding: 0 12px;
+    font-size:1.4rem;
+    /* font-size dung rem, tien cho responsive */
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    outline:none;
+}
+
+.auth-form__input:focus{
+    border-color: #777;
+}
+
+.auth-form__aside{
+    margin-top: 18px;
+}
+.auth-form__policy-text{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 0 12px;
+}
+.auth-form__text-link{
+    text-decoration: none;
+    /* color: var(--text-color); */
+}
+.auth-form__controls{
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__controls-back{
+    margin-right: 8px;
+}
+
+
+/* socials */
+
+.auth-form__socials{
+    background-color:#f5f5f5;
+    padding: 16px 36px;
+    display:flex;
+    justify-content: space-between;
+    margin-top:22px;
+}
+
+.auth-form__socials-icon{
+    font-size:1.8rem;
+    /* color: var(--white-color); */
+}
+
+.auth-form__socials--facebook{
+    background-color:#3A5A98;
+    color:var(--white-color);
+}
+
+.auth-form__socials--facebook
+.auth-form__socials-icon{
+    color:var(--white-color);
+}
+
+.auth-form__socials-title{
+    margin:0 30px;
+}
+
+.auth-form__socials--google{
+    background-color:var(--white-color);
+    color:#666;
+}
+
+/* login */
+.auth-form__help{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.auth-form__help-link{
+    text-decoration:none;
+    font-size: 1.4rem;
+    color:#939393;
+}
+
+.auth-form__help-separate{
+    display: block;
+    border-left: 1px solid #EAEAEA;
+    height: 18px;
+    margin: 1px 16px 0;
+}
+
+.auth-form__hepl-forgot{
+    color:var(--primary-color);
 }
