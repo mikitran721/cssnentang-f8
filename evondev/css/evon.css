@@ -1,0 +1,29 @@
+.title{
+    font-weight: bold;
+    font-size: 3rem;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color:chartreuse;
+}
+
+/* dang kiem tra la ko ho tro */
+@supports (-webkit-background-clip: text){
+    .title{
+        background-image: linear-gradient(to right bottom, brown 30%, blue 50%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+.shadow{
+    width: 20rem;
+    height: 20rem;
+    background-color: black;
+    margin: 5rem auto;
+    box-shadow: 5px 5px 10px 5px rgba(47, 78, 255, 0.548) ;
+    /* box-shadow: x y blur scale color
+        khong anh huong phan tu khac; ko day phan tu khac
+    */
+}
