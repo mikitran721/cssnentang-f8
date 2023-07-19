@@ -231,3 +231,72 @@ h2.title {
 /* 0 1 1 */
 
 /* (x,y,z) -> (tags, class or attribute, id) */
+
+/* child selector */
+ul {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    color: aqua;
+}
+
+li:nth-child(2) {
+    color: pink;
+}
+
+li:nth-child(4) {
+    color: blueviolet;
+}
+
+/* chon khi sinh code dong */
+/* nth-last-child -> hoat dong tu cuoi len tren; 
+    nguoc voi nth-child
+    vd: cai ke cuoi
+*/
+li:nth-last-child(2) {
+    color: yellowgreen;
+}
+
+/* cho tat ca tru cai dau tien */
+li:not(:first-child) {
+    color: green;
+}
+
+/* khong phai cai cuoi cung */
+li:not(:last-child) {
+    color: brown;
+}
+
+/* cho phan tu le - odd */
+li:nth-child(odd) {
+    color: chartreuse;
+}
+
+/* chon phan tu chan - even */
+li:nth-child(even) {
+    color: crimson;
+}
+
+/* n o day la chi so index chay tu 0; 
+    vd: 1, 3, 5
+*/
+li:nth-child(2n + 3) {
+    color: rgb(216, 237, 31);
+}
+
+/* combination */
+/* dau + la lien ke */
+h3+.title {
+    color: green;
+}
+
+/* dau ~ cung cap nhung khong nhat thie la lien ke */
+h3~.title2 {
+    color: red;
+}

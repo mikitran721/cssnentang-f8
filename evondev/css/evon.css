@@ -1,55 +1,29 @@
-/* child selector */
-ul{
-    font-size: 4rem;
-    font-weight: bold;
-}
+/* selector nang cao */
+/* vd: lua chon the a co href start= https */
 
-li:first-child{
+a[href^="https"]{
     color: red;
 }
 
-li:last-child{
-    color:aqua;
+/* the a ket thuc voi .vn */
+a[href$=".vn"]{
+    color: cyan;
 }
 
-li:nth-child(2){
-    color: pink;
+/* cho chua = * */
+a[href*="www"]{
+    color:brown;
 }
 
-li:nth-child(4){
+div[data-title="value"]{
     color: blueviolet;
 }
 
-/* chon khi sinh code dong */
-/* nth-last-child -> hoat dong tu cuoi len tren; 
-    nguoc voi nth-child
-    vd: cai ke cuoi
-*/
-li:nth-last-child(2){
-    color: yellowgreen;
+p::first-letter{
+    color: red;
+    font-size: 4rem;
 }
 
-/* cho tat ca tru cai dau tien */
-li:not(:first-child){
-    color: green;
-}
-
-/* khong phai cai cuoi cung */
-li:not(:last-child){
-    color:brown;
-}
-/* cho phan tu le - odd */
-li:nth-child(odd){
-    color:chartreuse;
-}
-/* chon phan tu chan - even */
-li:nth-child(even){
-    color: crimson;
-}
-
-/* n o day la chi so index chay tu 0; 
-    vd: 1, 3, 5
-*/
-li:nth-child(2n + 3){
-    color: rgb(216, 237, 31);
+p::first-line{
+    color: cadetblue;
 }
