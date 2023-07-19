@@ -163,3 +163,71 @@ body {
     display: none;
     /* display:none -> bien mat hoan toan */
 }
+
+/* shadow box */
+.shadow {
+    width: 20rem;
+    height: 20rem;
+    background-color: black;
+    margin: 5rem auto;
+    box-shadow: 15px 19px 14px 20px rgba(47, 78, 255, 0.548);
+    /* box-shadow: x y blur scale color
+        de chay bong sang phai dung so -x
+        scale = 0 no se trung voi item;
+        khong anh huong phan tu khac; ko day phan tu khac
+    */
+}
+
+/* shadow text */
+.shadow-text {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px orangered;
+}
+
+:root {
+    --primary-color: #00aefd;
+    --second-color: #ffa400;
+    /* sd: var(--second-color)
+        co the sd bien cuc bo cung ten de cai de mau trong 1 item nao do;
+    */
+}
+
+/* do uu tien css
+    tag < class <tag.class < id <tag.id < inline < !important
+    class < tag.class
+
+    inline & important sieu manh
+*/
+
+#title {
+    color: blueviolet;
+}
+
+/* 1 0 0 */
+h2#title {
+    color: pink;
+}
+
+/* 1 0 1 */
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: orange;
+}
+
+/* 0 1 0 */
+
+/* h2{
+    color: blue !important;
+} */
+
+
+h2.title {
+    color: blue;
+}
+
+/* 0 1 1 */
+
+/* (x,y,z) -> (tags, class or attribute, id) */

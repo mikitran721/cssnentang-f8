@@ -1,29 +1,55 @@
-.title{
+/* child selector */
+ul{
+    font-size: 4rem;
     font-weight: bold;
-    font-size: 3rem;
-    display: inline-block;
-    margin-top: 2rem;
-    margin-left: 2rem;
+}
+
+li:first-child{
+    color: red;
+}
+
+li:last-child{
+    color:aqua;
+}
+
+li:nth-child(2){
+    color: pink;
+}
+
+li:nth-child(4){
+    color: blueviolet;
+}
+
+/* chon khi sinh code dong */
+/* nth-last-child -> hoat dong tu cuoi len tren; 
+    nguoc voi nth-child
+    vd: cai ke cuoi
+*/
+li:nth-last-child(2){
+    color: yellowgreen;
+}
+
+/* cho tat ca tru cai dau tien */
+li:not(:first-child){
+    color: green;
+}
+
+/* khong phai cai cuoi cung */
+li:not(:last-child){
+    color:brown;
+}
+/* cho phan tu le - odd */
+li:nth-child(odd){
     color:chartreuse;
 }
-
-/* dang kiem tra la ko ho tro */
-@supports (-webkit-background-clip: text){
-    .title{
-        background-image: linear-gradient(to right bottom, brown 30%, blue 50%);
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-    }
+/* chon phan tu chan - even */
+li:nth-child(even){
+    color: crimson;
 }
 
-.shadow{
-    width: 20rem;
-    height: 20rem;
-    background-color: black;
-    margin: 5rem auto;
-    box-shadow: 5px 5px 10px 5px rgba(47, 78, 255, 0.548) ;
-    /* box-shadow: x y blur scale color
-        khong anh huong phan tu khac; ko day phan tu khac
-    */
+/* n o day la chi so index chay tu 0; 
+    vd: 1, 3, 5
+*/
+li:nth-child(2n + 3){
+    color: rgb(216, 237, 31);
 }
