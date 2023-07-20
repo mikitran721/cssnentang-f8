@@ -466,3 +466,95 @@ input[type="email"] {}
 
 input[name="fullname"] {}
 
+.boxed {
+    width: 10rem;
+    height: 5rem;
+    background-color: hsl(69, 86%, 50%);
+    /* transform: scaleX(2) scaleY(3);
+    /* transform: scale(0.2,5); */
+    /* transform: rotate(-45deg); */
+    /* transform: translateX(10px) translateY(20px); */
+    /* dich chuyen xuong = width cua no */
+    /* transform: translateX(100%) translateY(100%); */
+    /* ra giua */
+    /* transform: translateX(-50%) translateY(-50%); */
+    /* short hand */
+    /* transform: scale(2) rotate(45deg) translate(100%,50%); */
+
+    margin: 5rem;
+    transform: rotateZ(45deg);
+    /* transform: skewX(-30deg) skewY(-30deg); */
+    /* transform: scale scaleX(gap may lan) scaleY
+        transform: rotate(deg)  rotateX theo truc x; rotateY theo y rotateZ theo mat phang
+        translate: translate translateX translateY - dich chuyen sang x len y
+        - skew: skewX skewY keo theo kieu hinh binh hanh
+    */
+}
+
+/* transform
+    bien doi item, khong lam anh huong item #
+*/
+/* position: relative, */
+
+/* top left bottom right chi di kem voi position 
+    co top thi bottom ko chay
+    co left thi right ko chay
+*/
+p {
+    color: wheat;
+    /* zindex chi active khi di kem cung position */
+    position: relative;
+    z-index: 1;
+}
+
+.wrap {
+    width: 100%;
+    height: 50rem;
+    background-color: black;
+    position: relative;
+}
+
+.boxed {
+    width: 5rem;
+    height: 5rem;
+    background-color: #2497de;
+    position: absolute;
+    z-index: 2;
+    /* top: 10px; */
+    /* left: 10px; */
+    /* right:10px; */
+    /* bottom: 10px; */
+    /* can giua sd absolute */
+    /* left:50%;
+    top:50%; */
+    /* margin-top: -50px;
+    margin-left: -50px; */
+    /* transform: translate(-50%, -50%); */
+
+    /* can giua theo x */
+    /* left:50%;
+    transform: translateX(-50%); */
+
+    /* can giua theo y */
+    /* top:50%;
+    transform: translateY(-50%); */
+
+    /* overlay all 1*/
+    /* top:0; left:0;
+    width: 100%;
+    height: 100%; */
+
+    /* overlay all 2 */
+    /* top:0; left:0; bottom:0; right:0;
+    width: auto; height: auto; */
+
+    /* overlay theo x */
+    /* width: auto;
+    top: 0;right: 0;left: 0; */
+
+    /* overlay theo y; neu height=100% thi ko can bottom:0 */
+    height: auto;
+    top: 0;
+    bottom: 0;
+}
+
