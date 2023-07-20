@@ -1,84 +1,28 @@
-.text-gradient{
-    display: inline-block;
-    font-size:10rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    /* gradient for text */
-    color: transparent;
-    -webkit-background-clip:text;
-    background-clip: text;
-    background-image: linear-gradient(to left, #ff4895, #ffd96a);
-}
-
-.button{
-    display: inline-block;
-    padding: 1rem 3rem;
-    text-align: center;
-    border-radius: 6px;
-    margin: 2rem;
-    color: white;
-    text-transform: uppercase;
-    background-image: linear-gradient(to right, #50cfc6,#68ecac);
-    box-shadow: 0 0 10px 0 rgba(104, 236, 172, 0.852);
-}
-
-.color__item{
+.boxed{
     width: 10rem;
-    height: 15rem;
-    border-radius: 4px;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-    display: inline-block;
-    transition: background-color 0.25s linear;
-}
-.color__item:first-child{
-    background-color: #a24bf0;
+    height: 5rem;
+    background-color: hsl(69, 86%, 50%);
+    /* transform: scaleX(2) scaleY(3);
+    /* transform: scale(0.2,5); */
+    /* transform: rotate(-45deg); */
+    /* transform: translateX(10px) translateY(20px); */
+    /* dich chuyen xuong = width cua no */
+    /* transform: translateX(100%) translateY(100%); */
+    /* ra giua */
+    /* transform: translateX(-50%) translateY(-50%); */
+    /* short hand */
+    /* transform: scale(2) rotate(45deg) translate(100%,50%); */
+
+    margin: 5rem;
+    transform: rotateZ(45deg);
+    /* transform: skewX(-30deg) skewY(-30deg); */
+    /* transform: scale scaleX(gap may lan) scaleY
+        transform: rotate(deg)  rotateX theo truc x; rotateY theo y rotateZ theo mat phang
+        translate: translate translateX translateY - dich chuyen sang x len y
+        - skew: skewX skewY keo theo kieu hinh binh hanh
+    */
 }
 
-.color__item:first-child:hover {
-    background-color: #d91fb7;
-}
-
-.color__item:nth-child(2){
-    background-color: #38dbb2;
-}
-.color__item:nth-child(3){
-    background-color: #3881db;
-}
-.color__item:nth-last-child(2){
-    background-color: #c5db38;
-}
-.color__item:last-child{
-    background-color: #da7070;
-}
-.color__item:nth-child(odd){
-    background-color: #e29b15;
-}
-.color__item:nth-child(even){
-    background-color: #c86d12;
-}
-.color__item:not(:last-child){
-    background-color: #1bed96;
-}
-.color__item + .color__item{
-    background-color: #e01a8a;
-}
-.color__item ~ .color__item{
-    background-color: #c6a0a0;
-}
-/* bai 4 */
-.color__item:hover{
-    background-color: green;
-}
-/* bai 5 */
-div[data-link^="https"]{
-    color:rgb(93, 4, 4);
-}
-div[data-link$=".vn"]{
-    color: orange;
-}
-div[data-name*="hello"]{
-    color: antiquewhite;
-}
-input[type="email"]{}
-input[name="fullname"]{}
+/* transform
+    bien doi item, khong lam anh huong item #
+*/
