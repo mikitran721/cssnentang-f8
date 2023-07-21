@@ -1,108 +1,114 @@
-/* ::before vs ::after */
-/* .title::before{
-    content: "Toi ten la: ";
+/* animation 1 */
+/* animation dung voi @keyframes */
+.ring {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    /* border: 5px solid #6a5af9;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent; */
+    /* animation: ten-method tgian-chay chay-bao-lan kieu-chay (linear/ease/cubic-xx) */
+    /* animation: spinner 1s infinite linear alternate-reverse; */
+    /* alternate-chay nguoc lai; infinite-chay mai */
+    background-color: #6A5AF9;
+    animation: spinner 1s infinite linear;
 }
-.title::after{
-    content: " hoc CSS";
-} */
 
-/* duong line qua text */
-.title{
-    position: relative;
-    padding-left: 2rem;
+@keyframes spinner {
+    /* thu tu chay tu: from -> current -> to */
+
+    /* from */
+    /* from {
+        transform: rotate(0);
+    } */
+
+    /* current */
+
+    /* to */
+    /* from {
+        transform: rotate(-300deg);
+    }
+    to{
+        transform: rotate(360deg);
+    } */
+
+    /* transform: rotate(360deg) */
+    to{
+        transform: scale(1.5);
+        opacity: 0;
+    }
 }
-.title::before{
-    content: "";
-    width: 1rem;
-    height: 1rem;
-    border-radius: 0.5rem;
-    background-color: blue;
-    position: absolute;
+
+/* tiktok loader */
+.loader{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
 }
-
-.line{
-    text-align: center;
-    position: relative;
-}
-.line::after{
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: orangered;
+.loader div{
     position: absolute;
-    left:0;top:50%;
-    transform: translateY(-50%);
+    /* left: 0; */
 }
-.line-text{
-    display: inline-block;
-    padding: 10px;
-    background-color: #fff;
-    position: relative;
-    z-index: 2;
+.loader div:nth-child(1){
+    width: 80px;
+    height: 80px;
+    border-radius: 100rem;
+    background-color: #f7004d;
+    animation: spinnerTiktok 1s infinite linear;
+    animation-delay: -0.5s;
 }
-
-/* icon */
-.icon{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 4px;
-    color: rgb(234, 172, 29);
-    /* background-color: orangered;
-    opacity: 0.5; */
-    position: relative;
-    margin: 5rem auto;
+/* fake item1 */
+.loader div:nth-child(3){
+    width: 80px;
+    height: 80px;
+    border-radius: 100rem;
+    background-color: #f7004d;
+    animation: spinner2 1s linear infinite;
+    animation-delay: -0.5s;
 }
-.icon::after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    background-color: currentColor;
-    opacity: 0.25;
-    position: absolute;
-    top: 0;
-    left: 0;
-
+.loader div:nth-child(2){
+    width: 80px;
+    height: 80px;
+    border-radius: 100rem;
+    background-color: #3affff;
+    animation: spinnerTiktok 1s infinite linear;
 }
 
-.icon-user{
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-    /* opacity: 1; */
+@keyframes spinnerTiktok {
+    /* thu tu chay tu: from -> current -> to */
+    /* chia nho thi dung %; from 0%; to 100% */
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(80px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
-.effect{
-    text-decoration: none;
-    display: inline-block;
-    padding: 2rem;
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid orangered;
-    margin: 5rem;
-    transition: color 0.25s linear;
-    position: relative;
-    z-index: 1;
-}
-
-.effect::before{
-    content: "";
-    height: 0;
-    width: 100%;
-    position: absolute;
-    bottom:0; right:0;
-    background-color: orange;
-    z-index: -1;
-    transition: height 0.3s linear;
-}
-
-.effect:hover:before{
-    height: 100%;
-}
-
-.effect:hover{
-    color: rgb(179, 32, 32);
+@keyframes spinner2 {
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    49.99%{
+        opacity: 1;
+        transform: translateX(80px);
+    }
+    50%{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0);
+    }
 }
