@@ -1,114 +1,101 @@
-/* animation 1 */
-/* animation dung voi @keyframes */
-.ring {
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 100rem;
-    /* border: 5px solid #6a5af9;
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent; */
-    /* animation: ten-method tgian-chay chay-bao-lan kieu-chay (linear/ease/cubic-xx) */
-    /* animation: spinner 1s infinite linear alternate-reverse; */
-    /* alternate-chay nguoc lai; infinite-chay mai */
-    background-color: #6A5AF9;
-    animation: spinner 1s infinite linear;
+/* transition: ap dung cho phan tu truoc khi action */
+
+/* transition don gian */
+/* .link{
+    transition: all 0.2s linear;
 }
-
-@keyframes spinner {
-    /* thu tu chay tu: from -> current -> to */
-
-    /* from */
-    /* from {
-        transform: rotate(0);
-    } */
-
-    /* current */
-
-    /* to */
-    /* from {
-        transform: rotate(-300deg);
-    }
-    to{
-        transform: rotate(360deg);
-    } */
-
-    /* transform: rotate(360deg) */
-    to{
-        transform: scale(1.5);
-        opacity: 0;
-    }
+.link:hover{
+    color: #FF6651;
+} */
+body{
+    background-color: #544444;
 }
-
-/* tiktok loader */
-.loader{
-    width: 200px;
-    height: 200px;
+.button{
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 0;
 }
-.loader div{
+.button::before{
+    content: "";
     position: absolute;
-    /* left: 0; */
+    top: 0; left:0;
+    /* transform: translate(-50%, 0); */
+    height: 0;
+    width: 2px;
+    background-color: #6a5af9;
+    z-index: -1;
+    transition: height 0.25s ease-in, width 0.25s linear 0.2s5s;
+    /* tham so delay o cuoi transition */
 }
-.loader div:nth-child(1){
-    width: 80px;
-    height: 80px;
-    border-radius: 100rem;
-    background-color: #f7004d;
-    animation: spinnerTiktok 1s infinite linear;
-    animation-delay: -0.5s;
-}
-/* fake item1 */
-.loader div:nth-child(3){
-    width: 80px;
-    height: 80px;
-    border-radius: 100rem;
-    background-color: #f7004d;
-    animation: spinner2 1s linear infinite;
-    animation-delay: -0.5s;
-}
-.loader div:nth-child(2){
-    width: 80px;
-    height: 80px;
-    border-radius: 100rem;
-    background-color: #3affff;
-    animation: spinnerTiktok 1s infinite linear;
+.button:hover::before{
+    height: 100%;
+    width: 100%;;
 }
 
-@keyframes spinnerTiktok {
-    /* thu tu chay tu: from -> current -> to */
-    /* chia nho thi dung %; from 0%; to 100% */
-    0%{
-        transform: translateX(0);
-    }
-    50%{
-        transform: translateX(80px);
-    }
-    100%{
-        transform: translateX(0);
-    }
+.button2{
+    display:inline-block;
+    padding: 15px 50px;
+    margin:15px;
+    background-color: transparent;
+    color: #6a5af9;
+    border: none;
+    outline: none;
+    position:relative;
+    font-size: 20px;
+    color: white;
 }
 
-@keyframes spinner2 {
-    0%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-    49.99%{
-        opacity: 1;
-        transform: translateX(80px);
-    }
-    50%{
-        opacity: 0;
-        transform: translateX(80px);
-    }
-    100%{
-        opacity: 0;
-        transform: translate(0);
-    }
+.button2 span{
+    position: absolute;
+    background-color: #6a5af9;
+    display: block;
+    transition: all 0.25s linear;
+}
+
+.button2 span:nth-child(1){
+    top:0; left:0;
+    width: 0;
+    height: 2px;
+}
+.button2 span:nth-child(2){
+    top:0; right:0;
+    width: 2px;
+    height: 0;
+    transition-delay: 0.25s;
+}
+.button2 span:nth-child(3){
+    bottom:0; right:0;
+    width: 0;
+    height: 2px;
+    transition-delay: 0.50s;
+}
+.button2 span:nth-child(4){
+    bottom:0; left:0;
+    width: 2px;
+    height: 0;
+    transition-delay: 0.75s;
+}
+.button2:hover span:nth-child(odd){
+    width: 100%;
+}
+.button2:hover span:nth-child(even){
+    height: 100%;
+}
+.button2::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #6A5AF9;
+    transition: width 0.25s linear 1s;
+    z-index: -1;
+}
+.button2:hover::before{
+    width: 100%;
 }
